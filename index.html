@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Belleza&family=Berkshire+Swash&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -17,97 +20,53 @@
         <div class="contact">
             <img class="social-media" src="assets/icons/instagram.png" alt="instagram icon">
             <img class="social-media" src="assets/icons/whatsapp.png" alt="whatsapp icon">
-
         </div>
     </header>
 
-    <main class="containers">
-        <p>Agosto 2023</p>
-        <h2>Catálogo</h2>
-        <section class="containers">
-            <h3>Variedades comunes</h3>
-    
-            <article class="containers product-card">
-                <h4>Golden Teacher</h4>
-                <section class="card-image-container">
-                    <div class="slider-wrapper">
-                        <div class="slider">
-                            <img id="slide-1" src="assets/images/golden teacher.jpg" alt="GT Cubensis">
-                            <img id="slide-2" src="assets/images/golden teacher 2.jpg" alt="GT Cubensis2">
-                            <img id="slide-3" src="assets/images/golden teacher cartoon 1.jpg" alt="GT Cubensis3">
-                        </div>
-                        <div class="slider-nav">
-                            <a href="#slide-1"></a>
-                            <a href="#slide-2"></a>
-                            <a href="#slide-3"></a>
-                        </div>
-                    </div>
-                </section>
-                <img class="hide" src="assets/images/Agotado.png" alt="Agotado">
-                <img src="assets/images/potencia 3.png" alt="potencia variedad">
-                <p>$8 / g</p>
-                <h5>Origen</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nesciunt maxime error. Sunt temporibus, amet dignissimos, eos perspiciatis quo quisquam perferendis ducimus magni debitis tempore consequatur? Doloremque corrupti sunt quo.</p>
-                <button>Ver más</button>
-            </article>
-            <article class="containers product-card">
-                <h4>African Transkei</h4>
-                <img src="assets/images/transkei original.jpg" alt="TRK Cubensis"> <!-- Imagen placeholder  -->
-                <img class="hide" src="assets/images/class="hide" ado.png" alt="Agotado">
-                <img src="assets/images/potencia 3.png" alt="potencia variedad">
-                <p>$8 / g</p>
-                <h5>Origen</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nesciunt maxime error. Sunt temporibus, amet dignissimos, eos perspiciatis quo quisquam perferendis ducimus magni debitis tempore consequatur? Doloremque corrupti sunt quo.</p>
-                <button>Ver más</button>
-            </article>
-            <article class="containers product-card">
-                <h4>Albino A+</h4>
-                <img src="assets/images/aa+ .jpg" alt="AA+ Cubensis"> <!-- Imagen placeholder  -->
-                <img class="hide" src="assets/images/Agotado.png" alt="Agotado">
-                <img src="assets/images/potencia 3.png" alt="potencia variedad">
-                <p>$8 / g</p>
-                <h5>Origen</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nesciunt maxime error. Sunt temporibus, amet dignissimos, eos perspiciatis quo quisquam perferendis ducimus magni debitis tempore consequatur? Doloremque corrupti sunt quo.</p>
-                <button>Ver más</button>
-            </article>
-        </section>
-        <section class="containers">
-            <h3>Variedades exóticas</h3>
-    
-            <article class="containers product-card">
-                <h4>Jack Frost</h4>
-                <img src="assets/images/Jack-Frost-Mushroom.jpeg" alt="JF Cubensis"> <!-- Imagen placeholder  -->
-                <img class="hide" src="assets/images/Agotado.png" alt="Agotado">
-                <img src="assets/images/potencia 4.png" alt="potencia variedad">
-                <p>$10 / g</p>
-                <h5>Origen</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nesciunt maxime error. Sunt temporibus, amet dignissimos, eos perspiciatis quo quisquam perferendis ducimus magni debitis tempore consequatur? Doloremque corrupti sunt quo.</p>
-                <button>Ver más</button>
-            </article>
-            <article class="containers product-card">
-                <h4>Avery's Albino</h4>
-                <img src="assets/images/Albino-Avery-.jpg" alt="AvAl Cubensis"> <!-- Imagen placeholder  -->
-                <img class="hide" src="assets/images/Agotado.png" alt="Agotado">
-                <img src="assets/images/potencia 4.png" alt="potencia variedad">
-                <p>$10 / g</p>
-                <h5>Origen</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nesciunt maxime error. Sunt temporibus, amet dignissimos, eos perspiciatis quo quisquam perferendis ducimus magni debitis tempore consequatur? Doloremque corrupti sunt quo.</p>
-                <button>Ver más</button>
-            </article>
-            <article class="containers product-card">
-                <h4>Shakti</h4>
-                <img src="assets/images/shakti.png" alt="SHK Cubensis"> <!-- Imagen placeholder  -->
-                <img class="hide" src="assets/images/Agotado.png" alt="Agotado">
-                <img src="assets/images/potencia 4.png" alt="potencia variedad">
-                <p>$10 / g</p>
-                <h5>Origen</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nesciunt maxime error. Sunt temporibus, amet dignissimos, eos perspiciatis quo quisquam perferendis ducimus magni debitis tempore consequatur? Doloremque corrupti sunt quo.</p>
-                <button>Ver más</button>
-            </article>
-        </section>
-
+    <main>
+        <article class="product">
+            <section class="product__carousel carousel">
+                <button class="carousel__button carousel__button--left hide">
+                    <img src="./assets/icons/left.svg" alt="left navigation arrow">
+                </button>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="./assets/images/gt1.jpg" alt="Golden Teacher 1">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="./assets/images/gt2.jpg" alt="Golden Teacher 2">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="./assets/images/gt3.jpg" alt="Golden Teacher 3">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="./assets/images/gt4.jpg" alt="Golden Teacher 3">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel__button carousel__button--right">
+                    <img src="./assets/icons/right.svg" alt="right navigation arrow">
+                </button>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
+            </section>
+            <section class="product__info">
+                <p class="product__text title">Golden Teacher</p>
+                <div class="product__rank"><span>Rango:</span><img class="product__rank__image" src="./assets/images/potencia3.png" alt="potencia3"></div>
+                <p class="product__text title">S8,00</p>
+                <p class="hide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut aspernatur pariatur impedit possimus quis sequi hic ipsum magni culpa, unde tempore voluptas itaque quibusdam inventore quia illum sit eaque.
+                Reiciendis nostrum nam veniam doloribus animi ab, assumenda error facilis inventore laudantium pariatur. Voluptatem facilis necessitatibus iure vel maiores odit, error porro? Aliquam deleniti quaerat recusandae, labore sequi iure obcaecati.
+                Eius magnam porro ab libero id tenetur, ratione enim facilis! Possimus quos corporis deserunt sequi soluta, suscipit mollitia accusantium ea delectus ullam similique distinctio aliquid ex molestiae nostrum facilis. Minima.</p>
+                <button class="product__button">Más información</button>
+            </section>    
+        </article>
     </main>
     
-
+<script src="./js/scripts.js"></script>
 </body>
 </html>
