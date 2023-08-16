@@ -130,7 +130,22 @@ const reconstructCarousels = () => {
 
 //Inicio Programa
 reconstructCarousels()
-addEventListener('resize', e =>{
+/* addEventListener('resize', e =>{
     reconstructCarousels();
     console.log('asdas');
-})
+}) */
+
+
+
+//Posible solución al bug: Posicionar las imag directamente con css responsivo y calcular la distancia cada vez que se aplaste el boton para cambiar de slide (directamente en el evento)
+
+
+//Función de ver más y ver menos texto en descripción de variedades
+const moreButtons = document.querySelectorAll('.product__button');
+
+for (let i = 0; i < moreButtons.length; i++){
+    moreButtons[i].addEventListener('click', e =>{
+        moreButtons[i].classList.toggle('product__button--active')
+        moreButtons[i].previousElementSibling.classList.toggle('product__description--active')
+    })
+}

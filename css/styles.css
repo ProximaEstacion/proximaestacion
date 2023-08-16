@@ -49,8 +49,7 @@ Layout
 
 .product {
   background-color: hsl(0, 0%, 81%);
-  min-width: 320px;
-  width: 90%;
+  width: 320px;
   margin: 0 auto 1em auto;
   border-radius: 10px;
 }
@@ -70,12 +69,38 @@ Layout
   justify-content: center;
   align-items: center;
   font-family: 'Berkshire Swash', cursive;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.5rem;
 }
 
 .product__rank__image {
   width: 60%;
+}
+
+.product__description {
+  position: relative;
+  height: 60px;
+  padding: 0 1.8em;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product__description::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, hsl(0, 0%, 81%));
+}
+
+.product__description--active {
+  height: auto;
+}
+
+.product__description--active::before {
+  display: none;
 }
 
 .product__button {
@@ -89,6 +114,14 @@ Layout
   cursor: pointer;
 }
 
+.product__button::before {
+  content: 'Expandir';
+}
+
+.product__button--active::before {
+  content: 'Ocultar';
+}
+
 /* 
 ==================
 Carousel
@@ -97,7 +130,7 @@ Carousel
 
 .carousel {
   position: relative;
-  height: 25em;
+  height: 400px;
   width: 80%;
   margin:  auto;
   padding: 1.5rem 0;
