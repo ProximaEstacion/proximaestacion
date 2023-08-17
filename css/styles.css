@@ -136,6 +136,12 @@ Carousel
   padding: 1.5rem 0;
 }
 
+.carousel__sold-out {
+  position: absolute;
+  top: 120px;
+  width: 100%
+}
+
 .carousel__track-container {
   position: relative;
   height: 100%;
