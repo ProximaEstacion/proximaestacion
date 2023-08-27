@@ -2,10 +2,10 @@
   font-family: 'SweetDreams';
   font-weight: 400;
   src: url('../assets/fonts/emilyscandy-regular-webfont.woff2'),
-  url('/assets/fonts/emilyscandy-regular-webfont.woff2'),
+  url('https://proximaestacion.github.io/proximaestacion/assets/fonts/emilyscandy-regular-webfont.woff2'),
   url('/assets/fonts/emilyscandy-regular-webfont.woff2'),
   url('../assets/fonts/emilyscandy-regular-webfont.woff'),
-  url('/assets/fonts/emilyscandy-regular-webfont.woff'),
+  url('https://proximaestacion.github.io/proximaestacion/assets/fonts/emilyscandy-regular-webfont.woff'),
   url('/assets/fonts/emilyscandy-regular-webfont.woff');
 }
 
@@ -13,10 +13,10 @@
   font-family: 'Rundeck';
   font-weight: 400;
   src:url('../assets/fonts/rundeck-webfont.woff2'),
-  url('/assets/fonts/rundeck-webfont.woff2'),
+  url('https://proximaestacion.github.io/proximaestacion/assets/fonts/rundeck-webfont.woff2'),
    url('/assets/fonts/rundeck-webfont.woff2'),
    url('../assets/fonts/rundeck-webfont.woff'),
-   url('/assets/fonts/rundeck-webfont.woff'),
+   url('https://proximaestacion.github.io/proximaestacion/assets/fonts/rundeck-webfont.woff'),
   url('/assets/fonts/rundeck-webfont.woff');
 }
 
@@ -25,9 +25,9 @@
   font-weight: 400;
   src: url('../assets/fonts/herticaltexture-webfont.woff2'),
   url('/assets/fonts/herticaltexture-webfont.woff2'), 
-  url('/assets/fonts/herticaltexture-webfont.woff2'),
+  url('https://proximaestacion.github.io/proximaestacion/assets/fonts/herticaltexture-webfont.woff2'),
   url('../assets/fonts/herticaltexture-webfont.woff'),
-  url('/assets/fonts/herticaltexture-webfont.woff'),
+  url('https://proximaestacion.github.io/proximaestacion/assets/fonts/herticaltexture-webfont.woff'),
   url('/assets/fonts/herticaltexture-webfont.woff');
 }
 
