@@ -86,8 +86,8 @@ Fonts/Colors
 }
 
 .product__title {
-  font-size: 2.5rem;
-  line-height: 30px;
+  font-size: 2.4rem;
+  line-height: 38px;
 }
 
 .product__rank {
@@ -130,6 +130,12 @@ Layout
   padding: 0;
 }
 
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
 .product {
   position: relative;
   background-color: #E6DBC3;
@@ -145,8 +151,8 @@ Layout
 
 .product__title{
   position: absolute;
-  top: 59px;
-  left: -16px;
+  top: 50px;
+  left: -20px;
   /*background-color: rgba(0,0,0,.3); */
   z-index: 20;
   transform: rotate(-50deg);
