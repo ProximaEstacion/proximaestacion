@@ -51,7 +51,14 @@ a {
 Fonts/Colors
 ==================
 */
-.title {
+
+.catalog__varieties,
+.product__rank, .table__cell {
+  font-family: 'Rundeck', serif;
+}
+
+.title,
+.table__header {
   font-family: 'HerticalTexture', serif;
   font-weight: 400;
   font-size: 2rem;
@@ -73,11 +80,6 @@ Fonts/Colors
 
 .title--gold2 {
   text-shadow: -1px -1px 0 #cdb379, 1px -1px 0 #cdb379, -1px 1px 0 #cdb379, 1px 1px 0 #cdb379;
-}
-
-.catalog__varieties,
-.product__rank {
-  font-family: 'Rundeck', serif;
 }
 
 .catalog__varieties {
@@ -111,6 +113,23 @@ Fonts/Colors
 
 .product__button {
   font-size: .7rem;
+}
+
+.table__title,
+.table__header {
+  color: #fff;
+}
+
+.table__title{
+  font-size: 3rem;
+}
+
+.table__header {
+  font-size: .8rem;
+}
+
+.table__cell--long-text {
+  font-size: .9rem;
 }
 
 /* 
@@ -224,6 +243,35 @@ Layout
 
 .product__button--active::before {
   content: 'Ocultar';
+}
+
+.price-tables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.table__cell {
+  border: 3px dashed black;
+  width: 110px;
+  height: 110px;
+  text-align: center;
+}
+
+.table__title{
+  width: auto;
+  height: auto;
+  border-bottom: none;
+}
+
+.table__header {
+  height: 50px;
 }
 
 /* 
