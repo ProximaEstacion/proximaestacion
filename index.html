@@ -7,31 +7,72 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Próxima Estación</title>
 </head>
 <body>
 
-    <header>
-        <h1 class="title title--yellow">Próxima Estación</h1>
-        <div class="contact">
-            <img class="social-media" src="assets/icons/instagram.png" alt="instagram icon">
-            <img class="social-media" src="assets/icons/whatsapp.png" alt="whatsapp icon">
+    <header class="header">
+        <h1 class="title">Próxima Estación</h1>
+        <div class="nav">
+            <div class="nav__contact">
+                <p>Contactos</p>
+                <div class="nav__contact__icons">
+                    <a href="https://www.instagram.com/proxima.estacion_/" target="_blank">
+                        <img class="nav__icon" src="assets/icons/instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="https://w.app/ProximaEstacion" target="_blank">
+                        <img class="nav__icon" src="assets/icons/whatsapp.png" alt="whatsapp icon">
+                    </a>
+                </div>
+            </div>
+            <div class="nav__links">
+                <p>Precios</p>
+                <a href="#tablaDePrecios">
+                    <img class="nav__icon" src="./assets/icons/precios.png" alt="prices icon">
+                </a>
+            </div>
         </div>
     </header>
 
-    <main>
+    <main class="main">
         <h2 class="title title--yellow">Catálogo</h2>
         <section>
             <h3 class="title title--white">Variedades</h3>
             <ul class="catalog__varieties">
-                <li>- Golden Teacher -</li>
-                <li>- African Transkei -</li>
-                <li>- Albino A+ -</li>
-                <li>- Jack Frost -</li>
+                <li>
+                    <a href="#GT">- Golden Teacher -</a>
+                </li>
+                <li>
+                    <a href="#TRK">- African Transkei -</a>
+                </li>
+                <li>
+                    <a href="#AA+">- Albino A+ -</a>
+                </li>
+                <li>
+                    <a href="#JF">- Jack Frost -</a>
+                </li>
             </ul>
         </section>
         <section class="products">
-            <article class="product">  <!-- GT -->
+            <article class="product" id="GT">  <!-- GT -->
                 <section class="product__carousel carousel">
                     <button class="carousel__button carousel__button--left hide">
                         <img src="./assets/icons/left.svg" alt="left navigation arrow">
@@ -61,11 +102,11 @@
                         <button class="carousel__indicator"></button>
                         <button class="carousel__indicator"></button>
                     </div>
-                    <img class="carousel__sold-out" src="./assets/images/Agotado.png" alt="Agotado">
+                    <p class="carousel__sold-out">Agotado</p>
                 </section>
                 <section class="product__info">
                     <p class="product__title title title--gold1">Golden Teacher</p>
-                    <div class="product__rank title--gold2"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia3.png" alt="potencia3"></div>
+                    <div class="product__rank"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia3.png" alt="potencia3"></div>
                     <p class="product__price">$8,00</p>
                     <p class="product__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut aspernatur pariatur impedit possimus quis sequi hic ipsum magni culpa, unde tempore voluptas itaque quibusdam inventore quia illum sit eaque.
                     Reiciendis nostrum nam veniam doloribus animi ab, assumenda error facilis inventore laudantium pariatur. Voluptatem facilis necessitatibus iure vel maiores odit, error porro? Aliquam deleniti quaerat recusandae, labore sequi iure obcaecati.
@@ -74,7 +115,7 @@
                 </section>    
             </article>
     
-            <article class="product">  <!-- TRK -->
+            <article class="product" id="TRK">  <!-- TRK -->
                 <section class="product__carousel carousel">
                     <button class="carousel__button carousel__button--left hide">
                         <img src="./assets/icons/left.svg" alt="left navigation arrow">
@@ -104,11 +145,11 @@
                         <button class="carousel__indicator"></button>
                         <button class="carousel__indicator"></button>
                     </div>
-                    <img class="carousel__sold-out" src="./assets/images/Agotado.png" alt="Agotado">
+                    <p class="carousel__sold-out">Agotado</p>
                 </section>
                 <section class="product__info">
                     <p class="product__title title title--gold1">African Transkei</p>
-                    <div class="product__rank title--gold2"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia3.png" alt="potencia3"></div>
+                    <div class="product__rank"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia3.png" alt="potencia3"></div>
                     <p class="product__price">$8,00</p>
                     <p class="product__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut aspernatur pariatur impedit possimus quis sequi hic ipsum magni culpa, unde tempore voluptas itaque quibusdam inventore quia illum sit eaque.
                     Reiciendis nostrum nam veniam doloribus animi ab, assumenda error facilis inventore laudantium pariatur. Voluptatem facilis necessitatibus iure vel maiores odit, error porro? Aliquam deleniti quaerat recusandae, labore sequi iure obcaecati.
@@ -117,7 +158,7 @@
                 </section>    
             </article>
     
-            <article class="product">  <!-- AA+ -->
+            <article class="product" id="AA+">  <!-- AA+ -->
                 <section class="product__carousel carousel">
                     <button class="carousel__button carousel__button--left hide">
                         <img src="./assets/icons/left.svg" alt="left navigation arrow">
@@ -147,11 +188,11 @@
                         <button class="carousel__indicator"></button>
                         <button class="carousel__indicator"></button>
                     </div>
-                    <img class="carousel__sold-out" src="./assets/images/Agotado.png" alt="Agotado">
+                    <p class="carousel__sold-out hide">Agotado</p>
                 </section>
                 <section class="product__info">
                     <p class="product__title title title--gold1">Albino A+</p>
-                    <div class="product__rank title--gold2"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia3.png" alt="potencia3"></div>
+                    <div class="product__rank"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia3.png" alt="potencia3"></div>
                     <p class="product__price">$8,00</p>
                     <p class="product__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut aspernatur pariatur impedit possimus quis sequi hic ipsum magni culpa, unde tempore voluptas itaque quibusdam inventore quia illum sit eaque.
                     Reiciendis nostrum nam veniam doloribus animi ab, assumenda error facilis inventore laudantium pariatur. Voluptatem facilis necessitatibus iure vel maiores odit, error porro? Aliquam deleniti quaerat recusandae, labore sequi iure obcaecati.
@@ -160,7 +201,7 @@
                 </section>    
             </article>
     
-            <article class="product">  <!-- JF -->
+            <article class="product" id="JF">  <!-- JF -->
                 <section class="product__carousel carousel">
                     <button class="carousel__button carousel__button--left hide">
                         <img src="./assets/icons/left.svg" alt="left navigation arrow">
@@ -190,11 +231,11 @@
                         <button class="carousel__indicator"></button>
                         <button class="carousel__indicator"></button>
                     </div>
-                    <img class="carousel__sold-out" src="./assets/images/Agotado.png" alt="Agotado">
+                    <p class="carousel__sold-out hide">Agotado</p>
                 </section>
                 <section class="product__info">
                     <p class="product__title title title--gold1">Jack Frost</p>
-                    <div class="product__rank title--gold2"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia4.png" alt="potencia3"></div>
+                    <div class="product__rank"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia4.png" alt="potencia3"></div>
                     <p class="product__price">$10,00</p>
                     <p class="product__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut aspernatur pariatur impedit possimus quis sequi hic ipsum magni culpa, unde tempore voluptas itaque quibusdam inventore quia illum sit eaque.
                     Reiciendis nostrum nam veniam doloribus animi ab, assumenda error facilis inventore laudantium pariatur. Voluptatem facilis necessitatibus iure vel maiores odit, error porro? Aliquam deleniti quaerat recusandae, labore sequi iure obcaecati.
@@ -204,7 +245,7 @@
             </article>    
         </section>
         
-        <section class="price">
+        <section class="price" id="tablaDePrecios">
 
             <h2 class="title title--yellow">Precios</h2>
             <div class="price-tables">
@@ -283,6 +324,17 @@
 
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__icons">
+            <a href="https://www.instagram.com/proxima.estacion_/" target="_blank">
+                <img class="nav__icon" src="assets/icons/instagram.png" alt="instagram icon">
+            </a>
+            <a href="https://w.app/ProximaEstacion" target="_blank">
+                <img class="nav__icon" src="assets/icons/whatsapp.png" alt="whatsapp icon">
+            </a>
+        </div>
+    </footer>
     
 <script src="./js/scripts.js"></script>
 </body>
