@@ -1,3 +1,18 @@
+//cerrar mensaje de bienvenida
+
+const welcomeMsg = document.getElementById('welcomeMsg');
+const msgClose = document.getElementById('msgClose');
+
+msgClose.addEventListener('click', e =>{
+    sessionStorage.setItem('welcome-msg', 'closed')
+    welcomeMsg.classList.add('hide');
+})
+
+if (sessionStorage.getItem('welcome-msg') == 'closed'){
+    welcomeMsg.classList.add('hide');
+}
+
+
 /* const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');

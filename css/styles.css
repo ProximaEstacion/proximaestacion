@@ -30,7 +30,7 @@ body {
   color: black;
   /*background-image: linear-gradient(135deg, #b47c00, #bfb9bc ); */
   /*background-image: radial-gradient( circle 957px at 3.5em 30em,  #BBA273  0%, #b47c00 90% ); */
-  background-image: radial-gradient( circle at 50% 50%, #Fdcb4c 0%, #74470b 100%);
+  background-image: radial-gradient( circle at 50% 50%, #Fdcb4c 5%, #74470b 95%);
   /*background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
  background-blend-mode: multiply,multiply; */
   font-family: 'SweetDreams', sans-serif;
@@ -60,15 +60,33 @@ Fonts/Colors
 
 .title,
 .table__header,
-.nav {
+.nav,
+.welcome-msg__title {
   font-family: 'HerticalTexture', serif;
   font-weight: 400;
   font-size: 2rem;
   color: #000;
 }
 
+.welcome-msg__text {
+  font-family: 'Alegreya', serif;
+  font-size: 1.3rem;
+}
+
+.welcome-msg__author {
+  font-family: 'Anton', sans-serif;
+  font-size: 1rem;
+}
+
+.main {
+  padding-top: 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .main h2 {
   font-size: 3rem;
+  margin-top: 0;
 }
 
 .title--yellow {
@@ -160,6 +178,41 @@ Layout
 ==================
 */
 
+.welcome-msg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: #FFF5EE;
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  padding: .7em;
+  box-shadow: 0 0 0 100vmax rgba(0,0,0,.8);
+}
+
+.welcome-msg__title {
+  margin: 0;
+}
+
+.welcome-msg__close-icon {
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;;
+}
+
+.welcome-msg__text {
+  margin: 0;
+  padding: .5em;
+}
+
+.welcome-msg__author {
+  margin: 0;
+}
+
 .header {
   background: #1A1110;
   padding: 1.2em 0;
@@ -222,6 +275,7 @@ Layout
   background-color: #E6DBC3;
   width: 320px;
   margin: 0 auto 2em auto;
+  box-shadow: 6px 9px 33px -7px rgba(26,17,16,0.63);
 }
 
 .product__info {
@@ -324,7 +378,7 @@ Layout
 
 .table {
   border-collapse: collapse;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .table__cell {
