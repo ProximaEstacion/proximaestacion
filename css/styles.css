@@ -340,6 +340,7 @@ Layout
 }
 
 .product__price {
+  position: relative;
   margin: 0 auto;
   padding: 10px 0;
   align-self: flex-start;
@@ -446,11 +447,17 @@ Carousel
 }
 
 .carousel__sold-out {
+  display: flex;
   position: absolute;
-  top: 415px;
-  width: auto;
+  top: 3px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 320px;
+  height: 90px;
   margin: 0;
   background-color: rgba(230, 219, 195,.9);
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel__track-container {
