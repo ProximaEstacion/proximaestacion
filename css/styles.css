@@ -29,8 +29,8 @@
 @font-face {
   font-family: 'Rundeck';
   font-weight: 400;
-  src: url('/assets/fonts/rundeck-webfont.woff2'),
-   url('/assets/fonts/rundeck-webfont.woff');
+  src: url('/assets/fonts/rundeck-tildes-webfont.woff2'),
+   url('/assets/fonts/rundeck-tildes-webfont.woff');
 }
 
 @font-face {
@@ -75,7 +75,7 @@ Fonts/Colors
 */
 
 .catalog__varieties,
-.product__rank, .table__cell, .carousel__sold-out {
+.product__rank, .table__cell, .product__sold-out {
   font-family: 'Rundeck', serif;
 }
 
@@ -183,7 +183,7 @@ Fonts/Colors
   font-size: 2.1rem;
 }
 
-.carousel__sold-out {
+.product__sold-out {
   font-size: 3.42rem;
   /* color: #ff5757; */
   color: #ff3232;
@@ -346,6 +346,20 @@ Layout
   align-self: flex-start;
 }
 
+.product__sold-out {
+  display: flex;
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 320px;
+  height: 90px;
+  margin: 0;
+  background-color: rgba(230, 219, 195,.9);
+  align-items: center;
+  justify-content: center;
+}
+
 .product__description {
   position: relative;
   height: 60px;
@@ -444,20 +458,6 @@ Carousel
   width: 80%;
   margin:  auto;
   padding: 1.5rem 0;
-}
-
-.carousel__sold-out {
-  display: flex;
-  position: absolute;
-  top: 3px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  width: 320px;
-  height: 90px;
-  margin: 0;
-  background-color: rgba(230, 219, 195,.9);
-  align-items: center;
-  justify-content: center;
 }
 
 .carousel__track-container {
