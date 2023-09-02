@@ -1,22 +1,22 @@
 @font-face {
   font-family: 'SweetDreams';
   font-weight: 400;
-  src: url('https://proximaestacion.github.io/proximaestacion/assets/fonts/emilyscandy-regular-webfont.woff2'),
-  url('https://proximaestacion.github.io/proximaestacion/assets/fonts/emilyscandy-regular-webfont.woff');
+  src: url('http://proximaestacion.lat/assets/fonts/emilyscandy-regular-webfont.woff2'),
+  url('http://proximaestacion.lat/assets/fonts/emilyscandy-regular-webfont.woff');
 }
 
 @font-face {
   font-family: 'Rundeck';
   font-weight: 400;
-  src: url('https://proximaestacion.github.io/proximaestacion/assets/fonts/rundeck-webfont.woff2'),
-   url('https://proximaestacion.github.io/proximaestacion/assets/fonts/rundeck-webfont.woff');
+  src: url('http://proximaestacion.lat/assets/fonts/rundeck-webfont.woff2'),
+   url('http://proximaestacion.lat/assets/fonts/rundeck-webfont.woff');
 }
 
 @font-face {
   font-family: 'HerticalTexture';
   font-weight: 400;
-  src:  url('https://proximaestacion.github.io/proximaestacion/assets/fonts/herticaltexture-webfont.woff2'),
-  url('https://proximaestacion.github.io/proximaestacion/assets/fonts/herticaltexture-webfont.woff');
+  src:  url('http://proximaestacion.lat/assets/fonts/herticaltexture-webfont.woff2'),
+  url('http://proximaestacion.lat/assets/fonts/herticaltexture-webfont.woff');
 }
 
 /* 
