@@ -143,7 +143,11 @@ Fonts/Colors
 }
 
 .product__description {
-  font-size: 0.878rem;
+  font-size: 1rem;
+}
+
+.product__description span {
+  font-weight: 700;
 }
 
 .product__button {
@@ -355,6 +359,7 @@ Layout
   width: 320px;
   height: 90px;
   margin: 0;
+  padding-bottom: .2em;
   background-color: rgba(230, 219, 195,.9);
   align-items: center;
   justify-content: center;
@@ -386,6 +391,10 @@ Layout
 
 .product__description--active::before {
   display: none;
+}
+
+.product__description span {
+  line-height: 2em;
 }
 
 .product__button {
