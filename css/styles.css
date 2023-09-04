@@ -22,8 +22,8 @@
 @font-face {
   font-family: 'SweetDreams';
   font-weight: 400;
-  src: url('/assets/fonts/emilyscandy-regular-webfont.woff2'),
-  url('/assets/fonts/emilyscandy-regular-webfont.woff');
+  src: url('/assets/fonts/emilyscandy-nohearts-webfont.woff2'),
+  url('/assets/fonts/emilyscandy-nohearts-webfont.woff');
 }
 
 @font-face {
@@ -48,7 +48,7 @@ Global Styles
 body {
   min-height: 100vh;
   max-width: 100vw;
-  color: black;
+  color: #1A1110;
   /*background-image: linear-gradient(135deg, #b47c00, #bfb9bc ); */
   /*background-image: radial-gradient( circle 957px at 3.5em 30em,  #BBA273  0%, #b47c00 90% ); */
   background-image: radial-gradient( circle at 50% 50%, #Fdcb4c 5%, #74470b 95%);
@@ -86,7 +86,7 @@ Fonts/Colors
   font-family: 'HerticalTexture', serif;
   font-weight: 400;
   font-size: 2rem;
-  color: #000;
+  color: #1A1110;
 }
 
 .welcome-msg__text {
@@ -147,6 +147,7 @@ Fonts/Colors
 }
 
 .product__description span {
+  font-size: .96rem;
   font-weight: 700;
 }
 
