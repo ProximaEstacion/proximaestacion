@@ -1,14 +1,32 @@
-:root {
-  --color1: 115, 2, 12; /*rgb(115, 2, 12) #73020C Principal*/
-  --color2: 217, 74, 86; /*rgb(217, 74, 86) #D94A56 Secundario*/
-  --color3: 191, 4, 38; /*rgb(191, 4, 38) #BF0426 tres*/
-  --color4: 242, 235, 220; /*rgb(242, 235, 220) #F2EBDC cuatro*/
-  --color5: 13, 13, 13; /*rgb(13, 13, 13) #0D0D0D cinco*/
-  
-  --background: 88, 5, 12; /*rgb(88, 5, 12)*/
+/*@font-face {
+  font-family: 'SweetDreams';
+  font-weight: 400;
+  src: url('http://proximaestacion.lat/assets/fonts/emilyscandy-regular-webfont.woff2'),
+  url('http://proximaestacion.lat/assets/fonts/emilyscandy-regular-webfont.woff');
+}
 
-  --black: 13, 13, 13; /*rgb(13, 13, 13)  #0D0D0D*/
-  --white: 242, 235, 220; /*rgb(242, 235, 220) #F2EBDC*/
+@font-face {
+  font-family: 'Rundeck';
+  font-weight: 400;
+  src: url('http://proximaestacion.lat/assets/fonts/rundeck-webfont.woff2'),
+   url('http://proximaestacion.lat/assets/fonts/rundeck-webfont.woff');
+}
+
+@font-face {
+  font-family: 'HerticalTexture';
+  font-weight: 400;
+  src:  url('http://proximaestacion.lat/assets/fonts/herticaltexture-webfont.woff2'),
+  url('http://proximaestacion.lat/assets/fonts/herticaltexture-webfont.woff');
+} */
+
+:root {
+  --color1: rgb(115, 2, 12); /*Principal*/
+  --color2: rgb(242, 235, 220); /*Secundario*/
+  --color3: #0D0D0D;
+  --color4: #0D0D0D;
+
+  --black: rgb(13, 13, 13);
+  --white: rgb(242, 235, 220);
 }
 
 @font-face {
@@ -19,10 +37,27 @@
 }
 
 @font-face {
-  font-family: 'PWCartoonist';
+  font-family: 'Rundeck';
   font-weight: 400;
-  src: url('/assets/fonts/pwcartoonist-webfont.woff2'),
-  url('/assets/fonts/pwcartoonist-webfont.woff');
+  src: url('/assets/fonts/rundeck-tildes-webfont.woff2'),
+   url('/assets/fonts/rundeck-tildes-webfont.woff');
+}
+
+@font-face {
+  font-family: 'HerticalTexture';
+  font-weight: 400;
+  src:  url('/assets/fonts/herticaltexture-webfont.woff2'),
+  url('/assets/fonts/herticaltexture-webfont.woff');
+}
+
+@font-face {
+  font-family: 'PWCartoonist';
+  src: /* url('/assets/fonts/Shoes\ center.ttf'); */
+      /* url('/assets/fonts/YARDSALE.TTF'); */
+      /* url('/assets/fonts/Broken\ Dreams.otf'); */
+      /* url('/assets/fonts/mouthbrebb.ttf'); */
+     /*  url('/assets/fonts/Who\ Dares!\ Bold\ Italic.otf'); */
+       url('/assets/fonts/PWCartoonist.ttf');
 }
 
 /* 
@@ -34,8 +69,15 @@ Global Styles
 body {
   min-height: 100vh;
   max-width: 100%;
-  color: rgb(var(--black));
-  background-color: rgb(var(--background));
+  color: var(--black);
+  /*background-image: linear-gradient(135deg, #b47c00, #bfb9bc ); */
+  /*background-image: radial-gradient( circle 957px at 3.5em 30em,  #BBA273  0%, #b47c00 90% ); */
+  /*background-image: linear-gradient(135deg, var(--color1), var(--color4) );
+  /*background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+ background-blend-mode: multiply,multiply; */
+ /*background-color: #73020C; */
+  background-color: #58050C;
+
   font-family: 'Anton', sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
@@ -82,14 +124,6 @@ Fonts/Colors
   font-weight: 700;
 }
 
-.nav {
-  font-size: .83rem;
-}
-
-.nav__menu-icon {
-  font-size: 3rem;
-}
-
 .main h2 {
   font-size: 3rem;
 }
@@ -103,12 +137,11 @@ Fonts/Colors
 }
 
 .product__title--short {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   line-height: 36px;
 }
 
 .product__rank {
-  color: rgb(var(--color4));
   font-weight: 400;
   font-size: 1.5rem;
 }
@@ -141,20 +174,15 @@ Fonts/Colors
 .table,
 .header h1,
 .main h2 {
-  color: rgb(var(--white));
-}
-
-.nav,
-.nav__menu-icon {
-  color: rgb(var(--color4));
+  color: var(--white);
 }
 
 .table__title{
-  font-size: 3.33rem;
+  font-size: 3rem;
 }
 
 .table__header {
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .table__cell--long-text {
@@ -167,7 +195,7 @@ Fonts/Colors
 
 .product__sold-out {
   font-size: 3.42rem;
-  color: rgb(var(--color3));
+  color: #BF0426;
 }
 
 /* 
@@ -182,12 +210,12 @@ Layout
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1100;
-  background-color: rgb(var(--white));
+  background-color: var(--white);
   text-align: center;
   width: 90%;
   max-width: 1000px;
   padding: .7em;
-  box-shadow: 0 0 0 100vmax rgba(var(--black),.8);
+  box-shadow: 0 0 0 100vmax rgba(0,0,0,.8);
 }
 
 .welcome-msg__title {
@@ -218,7 +246,7 @@ Layout
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(var(--black));
+  background-color: var(--black);
   z-index: 1000;
 }
 
@@ -228,13 +256,17 @@ Layout
   width: 105px;
   text-align: justify;
 }
-
 /*NAV BAR DROPDOWNMENU*/
+
+.nav {
+  font-size: .83rem;
+  color: var(--white);
+}
 
 .nav__level1 li{
   float: left;
   position: relative;
-  background-color: rgb(var(--color5));
+  background-color: var(--black);
   width: 160px;
 }
 
@@ -245,7 +277,7 @@ Layout
 }
 
 .nav__level1 li a:hover {
-  background-color: #595959;
+  background-color: #66433F;
 }
 
 .nav__level2 {
@@ -265,7 +297,7 @@ Layout
 
 .nav__level2 li {
   width: 100%;
-  background-color: #333333;
+  background-color: #332220;
 }
 
 .nav__level1 li:hover > ul {
@@ -273,7 +305,9 @@ Layout
 }
 
 .nav__menu-icon {
+  color: var(--white);
   text-align: center;
+  font-size: 3rem;
   display: none;
   margin-right: 1em;
   cursor: pointer;
@@ -294,7 +328,7 @@ Layout
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--color5);
+    background-color: var(--black);
     display: none;
   }
 
@@ -313,7 +347,7 @@ Layout
   }
 
   .nav__level2 li {
-    background-color: #333333;
+    background-color: #332220;
   }
 
   .nav__level3 {
@@ -327,6 +361,8 @@ Layout
   }
 
 }
+
+
 
 /*FIN NAV BAR*/
 
@@ -342,7 +378,7 @@ Layout
 
 .title {
   text-align: center;
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
 }
 
 .products {
@@ -355,13 +391,17 @@ Layout
 
 .product {
   position: relative;
-  background-color: rgb(var(--color4));
+  background-color: var(--color2);
   width: 320px;
   margin: 0 0 2em 0;
-  box-shadow: 6px 9px 33px -7px rgba(var(--black),0.63);
+  box-shadow: 6px 9px 33px -7px rgba(26,17,16,0.63);
 }
 
-/* Carousel */
+/* 
+==================
+Carousel
+==================
+*/
 
 .carousel {
   position: relative;
@@ -375,8 +415,8 @@ Layout
   position: relative;
   height: 100%;
   overflow: hidden;
-  border-bottom: solid 3px rgb(var(--color5));
-  border-right: solid 2px rgb(var(--color5));
+  border-bottom: solid 3px var(--color3);
+  border-right: solid 2px var(--color3);
 }
 
 .carousel__track-container::before{
@@ -387,9 +427,9 @@ Layout
   content: '';
   height: 70px;
   width: 300px;
-  background-color: rgb(var(--color4));
+  background-color: var(--color2);
   transform: rotate(130deg);
-  border: solid 2px rgb(var(--color5));
+  border: solid 2px var(--color3);
 }
 .carousel__track-container::after{
   content: '';
@@ -398,8 +438,8 @@ Layout
   background-color: transparent;
   width: 100%;
   height: 100%;
-  border-top: solid 2px rgb(var(--color5));
-  border-left: solid 2px rgb(var(--color5));
+  border-top: solid 2px var(--color3);
+  border-left: solid 2px var(--color3);
 }
 
 .carousel__track {
@@ -449,7 +489,7 @@ Layout
 }
 
 .carousel__indicator {
-  border: 1px solid rgb(var(--black));
+  border: 1px solid var(--black);
   border-radius: 50%;
   width: 15px;
   height: 15px;
@@ -459,10 +499,8 @@ Layout
 }
 
 .carousel__indicator.current-slide {
-  background: rgba(var(--black),.8);
+  background: rgba(26,17,16,.8);
 }
-
-/*FIN DEL CAROUSEL*/
 
 .product__info {
   display: flex;
@@ -472,25 +510,20 @@ Layout
 
 .product__title{
   position: absolute;
-  top: 48px;
-  left: -16px;
+  top: 50px;
+  left: -20px;
   /*background-color: rgba(0,0,0,.3); */
   z-index: 20;
   transform: rotate(-50deg);
   margin: 0;
   width: 200px;
-  height: 70px;
+  height: 65px;
   text-align: center;
 }
-
-.product__title--short {
-  top: 45px;
-  left: -18px;
-}
-
 .product__rank {
   position: absolute;
-  background-color: rgb(var(--color5));
+  color: var(--color2);
+  background-color: var(--black);
   top: 349px;
   left: 34px;
   padding: 2px;
@@ -527,7 +560,7 @@ Layout
   margin: 0;
   padding-bottom: .2em;
  /* background-color: rgba(180, 217, 154, .9);*/
-  background-color: rgba(var(--color4),.9);
+  background-color: rgba(242, 235, 220,.9);
   align-items: center;
   justify-content: center;
 }
@@ -549,7 +582,7 @@ Layout
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(transparent, rgb(var(--color4)));
+  background: linear-gradient(transparent, var(--color2));
 }
 
 .product__description--active {
@@ -568,7 +601,7 @@ Layout
   background-color: transparent;
   padding: .7em;
   margin-bottom: 20px;
-  border: 1px solid rgb(var(--color5));
+  border: 1px solid var(--black);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -595,7 +628,7 @@ Layout
 }
 
 .table__cell {
-  border: 3px dashed rgb(var(--color4));
+  border: 3px dashed var(--color2);
   width: 110px;
   height: 110px;
   text-align: center;
@@ -613,7 +646,7 @@ Layout
 }
 
 .footer {
-  background-color: rgb(var(--color5));
+  background-color: var(--black);
 }
 
 .footer__icons {
@@ -627,17 +660,18 @@ Layout
   width: 50px;
 }
 
+
 /*
   ==================
   Transitions/Animations
   ==================
-*/
+  */
 
 /* 
   ==================
   Overwriting styles
   ==================
-*/
-  .hide{
+  */
+.hide{
     display: none;
 }
