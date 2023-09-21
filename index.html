@@ -42,35 +42,46 @@
         <p class="welcome-msg__author">-Terence McKenna-</p>
     </div>
 
+    <!-- Header Start -->
     <header class="header">
-        <h1 class="title">Próxima Estación</h1>
-        <input class="nav__menu-icon" type="checkbox" id="toggle">
-        <label class="nav__menu-icon" for="toggle">≡</label>
-        <nav class="nav">
-            <ul class="nav__level1">
-                <li><a href="#">Variedades <b>▼</b></a>
-                    <ul class="nav__level2">
-                        <li><a href="#">Psilocybe Cubensis <b>▼</b></a>
-                            <ul class="nav__level3">
-                                <li><a href="#GT">Golden Teacher</a></li>
-                                <li><a href="#TRK">African Transkei</a></li>
-                                <li><a href="#AA+">Albino A+</a></li>
-                                <li><a href="#JF">Jack Frost</a></li>
+        <div class="header__container">
+            <div class="header-main">
+                <h1 class="title logo"><a href="/index.html">Próxima Estación</a></h1>
+                <div class="open-nav-menu">
+                    <span></span>
+                </div>
+                <!-- navigation menu start -->
+                <nav class="nav-menu">
+                    <div class="close-nav-menu">
+                        <img src="./assets/icons/cross.png" alt="exit icon">
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-item menu-item--has-children"><a href="javascript:void(0)" data-toggle="sub-menu">Variedades <i class="plus"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item--has-children"><a href="javascript:void(0)" data-toggle="sub-menu--level2">P. Cubensis <i class="plus"></i></a>
+                                    <ul class="sub-menu--level2">
+                                        <li class="menu-item"><a href="#GT" data-link="valid">Golden Teacher</a></li>
+                                        <li class="menu-item"><a href="#TRK" data-link="valid">African Transkei</a></li>
+                                        <li class="menu-item"><a href="#AA+" data-link="valid">Albino A+</a></li>
+                                        <li class="menu-item"><a href="#JF" data-link="valid">Jack Frost</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#tablaDePrecios" data-link="valid">Tabla de precios</a></li>
+                        <li class="menu-item menu-item--has-children"><a href="javascript:void(0)" data-toggle="sub-menu">Contactos <i class="plus"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="https://www.instagram.com/proxima.estacion_/" target="_blank" data-link="valid">Instagram</a></li>
+                                <li class="menu-item"><a href="https://wa.link/7ug4p0" target="_blank" data-link="valid">Whatsapp</a></li>
                             </ul>
                         </li>
                     </ul>
-                </li>
-                <li><a href="#tablaDePrecios">Tabla de precios</a></li>
-                <li><a href="#">Contactos <b>▼</b></a>
-                    <ul class="nav__level2">
-                        <li><a href="https://www.instagram.com/proxima.estacion_/" target="_blank">Instagram</a></li>
-                        <li><a href="https://w.app/ProximaEstacion" target="_blank">Whatsapp</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
+                </nav>
+                <!-- navigation menu end -->
+            </div>
+        </div>
     </header>
+    <!-- Header end -->
 
     <main class="main">
 
@@ -110,12 +121,19 @@
                 </section>
                 <section class="product__info">
                     <p class="product__title title">Golden Teacher</p>
-                    <div class="product__rank"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia3.png" alt="potencia3"></div>
+                    <div class="product__rank">
+                        <span>Potencia</span>
+                        <div class="product__rank__images__container">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                        </div>
+                    </div>
                     <p class="product__price">$8,00
                         <span class="product__sold-out">Agotado</span>
                     </p>
                     <p class="product__description"><span>Psilocybe Cubensis - Variedad moderada</span> 
-                    <br>Se cree que fue originada en algún lugar de América Central o del Sur, aunque su origen exacto no está claro. La razón detrás de su nombre proviene de la apariencia distintiva de los hongos. Los sombreros de los hongos Golden Teacher tienen un color dorado, amarillo o incluso marrón claro, lo que los hace fácilmente reconocibles. Es un clásico para los principiantes que se inician en este mundo. No es raro que las setas Golden Teacher produzcan una sensación de iluminación y una conexión más profunda con la naturaleza. Su nombre también deriva de la capacidad de estas setas de enseñar al que las toma mediante nuevas experiencias psicodélicas y trascendentales.
+                    <br>Se cree que fue originada en algún lugar de la costa de Georgia, Estados Unidos, algunos dicen que fue recolectada originalmente por Mr. G (un usuario del foro Shroomery y uno  de los primeros comerciantes de variedades), aunque su origen exacto no está claro. La razón detrás de su nombre proviene de la apariencia distintiva de los hongos. Los sombreros de los hongos Golden Teacher tienen un color dorado, amarillo o incluso marrón claro, lo que los hace fácilmente reconocibles. Es un clásico para los principiantes que se inician en este mundo. No es raro que las setas Golden Teacher produzcan una sensación de iluminación y una conexión más profunda con la naturaleza. Su nombre también deriva de la capacidad de estas setas de enseñar al que las toma mediante nuevas experiencias psicodélicas y trascendentales.
                     </p>
                     <button class="product__button"></button>
                 </section>    
@@ -154,13 +172,20 @@
                 </section>
                 <section class="product__info">
                     <p class="product__title title">African Transkei</p>
-                    <div class="product__rank"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia3.png" alt="potencia3"></div>
+                    <div class="product__rank">
+                        <span>Potencia</span>
+                        <div class="product__rank__images__container">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                        </div>
+                    </div>
                     <p class="product__price">$8,00
                         <span class="product__sold-out">Agotado</span>
                     </p>
                     <p class="product__description"><span>Psilocybe Cubensis - Variedad moderada</span> 
-                        <br>Como su nombre lo indica, la cepa Transkei es nativa de la región de Transkei, que se encuentra en la provincia del Cabo Oriental de Sudáfrica. Esta área es conocida por su clima cálido y húmedo, lo que proporciona un ambiente propicio para el crecimiento de hongos psicoactivos.
-                        Los hongos de la cepa Transkei generalmente tienen sombreros de color marrón claro a marrón oscuro con un borde más claro. Su tallo suele ser más largo y delgado en comparación con otras variedades de Psilocybe cubensis.La variedad Transkei es considerada moderadamente potente, similar a otras variedades de Psilocybe cubensis.
+                        <br>Como su nombre lo indica, la variedad South African Transkei es nativa de la región de Transkei, que se encuentra en la provincia del Cabo Oriental de Sudáfrica. Esta área es conocida por su clima cálido y húmedo, lo que proporciona un ambiente propicio para el crecimiento de hongos psicoactivos.
+                        Los hongos de la variedad Transkei generalmente tienen sombreros de color marrón claro a marrón oscuro con un borde más claro. Su tallo suele ser más largo y delgado en comparación con otras variedades de Psilocybe cubensis.La variedad Transkei es considerada moderadamente potente, similar a otras variedades de Psilocybe cubensis.
                     </p>
                     <button class="product__button"></button>
                 </section>    
@@ -199,12 +224,19 @@
                 </section>
                 <section class="product__info">
                     <p class="product__title product__title--short">Albino A+</p>
-                    <div class="product__rank"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia3.png" alt="potencia3"></div>
+                    <div class="product__rank">
+                        <span>Potencia</span>
+                        <div class="product__rank__images__container">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                        </div>
+                    </div>
                     <p class="product__price">$8,00
                         <span class="product__sold-out hide">Agotado</span>
                     </p>
                     <p class="product__description"><span>Psilocybe Cubensis - Variedad moderada</span> 
-                        <br>Fue desarrollada a partir de la cepa A+ original, cuyo origen exacto no está completamente claro, pero se cree que fue descubierta o desarrollada en la región de Florida en Estados Unidos. No son albinos en el sentido biológico del término. El término "albino" se utiliza para describirlos debido a su apariencia blanca pura, pero no significa que carezcan completamente de pigmentación. Esto es el resultado de una mutación genética que afecta la producción de pigmentos en los tejidos del hongo, lo que le da a esta variedad una apariencia elegante y única. Esta variedad es considerada moderadamente potente, similar a otras variedades de Psilocybe cubensis.
+                        <br>Originalmente comerciada por Ralphsters Spores. Fue desarrollada a partir de la variedad A+ original, cuyo origen exacto no está completamente claro, pero se cree que fue descubierta o desarrollada en la región de Florida en Estados Unidos. No son albinos en el sentido biológico del término, realmente son leucísticos. El término "albino" se utiliza para describirlos debido a su apariencia blanca pura, pero no significa que carezcan completamente de pigmentación. Esto es el resultado de una mutación genética que afecta la producción de pigmentos en los tejidos del hongo, lo que le da a esta variedad una apariencia elegante y única. Esta variedad es considerada moderadamente potente, similar a otras variedades de Psilocybe cubensis.
                     </p>
                     <button class="product__button"></button>
                 </section>    
@@ -243,7 +275,15 @@
                 </section>
                 <section class="product__info">
                     <p class="product__title product__title--short title">Jack Frost</p>
-                    <div class="product__rank"><span>Potencia</span><img class="product__rank__image" src="./assets/images/potencia4.png" alt="potencia3"></div>
+                    <div class="product__rank">
+                        <span>Potencia</span>
+                        <div class="product__rank__images__container">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                            <img class="product__rank__image" src="./assets/images/potencia.png" alt="potencia">
+                        </div>
+                    </div>
                     <p class="product__price">$10,00
                         <span class="product__sold-out hide">Agotado</span>
                     </p>
@@ -340,7 +380,7 @@
             <a href="https://www.instagram.com/proxima.estacion_/" target="_blank">
                 <img class="footer__icon" src="assets/icons/instagram.png" alt="instagram icon">
             </a>
-            <a href="https://w.app/ProximaEstacion" target="_blank">
+            <a href="https://wa.link/7ug4p0" target="_blank">
                 <img class="footer__icon" src="assets/icons/whatsapp.png" alt="whatsapp icon">
             </a>
         </div>
