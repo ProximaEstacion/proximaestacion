@@ -501,6 +501,12 @@ Layout
   margin-bottom: .8em;
 }
 
+.section-title{
+  border: solid 2px rgb(var(--color4));
+  padding: .1em 0 .2em 0;
+  box-shadow: 6px 9px 33px -7px rgba(var(--black),0.63);
+}
+
 .products {
   display: flex;
   flex-wrap: wrap;
