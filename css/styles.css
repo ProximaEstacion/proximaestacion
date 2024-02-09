@@ -114,6 +114,10 @@ Fonts/Colors
   font-size: 2.1em;
 }
 
+.product__title--mazatapec{
+  font-size: 1.8em;
+}
+
 .product__rank {
   color: rgb(var(--color4));
   font-weight: 400;
