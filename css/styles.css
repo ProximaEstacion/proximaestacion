@@ -118,6 +118,10 @@ Fonts/Colors
   font-size: 1.8em;
 }
 
+.product__title--cambodian{
+  line-height: 78px;
+}
+
 .product__rank {
   color: rgb(var(--color4));
   font-weight: 400;
