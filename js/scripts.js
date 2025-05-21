@@ -259,3 +259,23 @@ window.addEventListener('resize', function(){
     if(this.innerWidth > mediaSize) resizeFix();
 });
 
+//function to sort products by stock availability
+
+const productContainer = document.querySelector(".products");
+const products = Array.from(productContainer.querySelectorAll(".product"));
+
+const inStock = [];
+const outOfStock = [];
+
+products.forEach(product => {
+    const soldOutTag = product.querySelector(".product__sold-out");
+
+    if (soldOutTag && soldOutTag.classList.contains("hide")) {
+        inStock.push(product);
+    } else {
+        outOfStock.push(product);
+    }
+});
+
+productContainer.innerHTML = "";  //Empty and reorder
+[...inStock, ...outOfStock].forEach(product => productContainer.appendChild(product));
