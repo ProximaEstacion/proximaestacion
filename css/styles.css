@@ -1,4 +1,6 @@
 :root {
+  color-scheme: light; /* Evitar modo oscuro forzado */
+
   --color1: 115, 2, 12; /*rgb(115, 2, 12) #73020C Principal*/
   --color2: 217, 74, 86; /*rgb(217, 74, 86) #D94A56 Secundario*/
   --color3: 191, 4, 38; /*rgb(191, 4, 38) #BF0426 tres*/
